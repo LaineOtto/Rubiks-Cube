@@ -6,13 +6,425 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <FrameLayout
+        android:id="@+id/whiteFrame"
+        android:layout_width="70dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintLeft_toLeftOf="@+id/blueFrame"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableLayout
+            android:id="@+id/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/face1"
+                    android:text="@string/face1" />
+
+                <TextView
+                    android:id="@+id/face2"
+                    android:text="@string/face2" />
+
+                <TextView
+                    android:id="@+id/face3"
+                    android:text="@string/face3" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/face4"
+                    android:text="@string/face4" />
+
+                <TextView
+                    android:id="@+id/face5"
+                    android:text="@string/face5" />
+
+                <TextView
+                    android:id="@+id/face6"
+                    android:text="@string/face6" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/face7"
+                    android:text="@string/face7" />
+
+                <TextView
+                    android:id="@+id/face8"
+                    android:text="@string/face8" />
+
+                <TextView
+                    android:id="@+id/face9"
+                    android:text="@string/face9" />
+
+            </TableRow>
+
+        </TableLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/blueFrame"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@+id/whiteFrame"
+        app:layout_constraintTop_toBottomOf="@+id/whiteFrame">
+
+        <TableLayout
+            android:id="@+id/blue"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/face10"
+                    android:text="@string/face10" />
+
+                <TextView
+                    android:id="@+id/face11"
+                    android:text="@string/face11" />
+
+                <TextView
+                    android:id="@+id/face12"
+                    android:text="@string/face12" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/face13"
+                    android:text="@string/face13" />
+
+                <TextView
+                    android:id="@+id/face14"
+                    android:text="@string/face14" />
+
+                <TextView
+                    android:id="@+id/face15"
+                    android:text="@string/face16" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/face16"
+                    android:text="@string/face16" />
+
+                <TextView
+                    android:id="@+id/face17"
+                    android:text="@string/face17" />
+
+                <TextView
+                    android:id="@+id/face18"
+                    android:text="@string/face18" />
+
+            </TableRow>
+
+        </TableLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/orangeFrame"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/blueFrame"
+        app:layout_constraintTop_toTopOf="@+id/blueFrame">
+
+        <TableLayout
+            android:id="@+id/orange"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/face19"
+                    android:text="@string/face19" />
+
+                <TextView
+                    android:id="@+id/face20"
+                    android:text="@string/face20" />
+
+                <TextView
+                    android:id="@+id/face21"
+                    android:text="@string/face21" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/face22"
+                    android:text="@string/face22" />
+
+                <TextView
+                    android:id="@+id/face23"
+                    android:text="@string/face23" />
+
+                <TextView
+                    android:id="@+id/face24"
+                    android:text="@string/face24" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/face25"
+                    android:text="@string/face25" />
+
+                <TextView
+                    android:id="@+id/face26"
+                    android:text="@string/face26" />
+
+                <TextView
+                    android:id="@+id/face27"
+                    android:text="@string/face27" />
+
+            </TableRow>
+
+        </TableLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/greenFrame"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@+id/orangeFrame"
+        app:layout_constraintTop_toTopOf="@+id/blueFrame">
+
+        <TableLayout
+            android:id="@+id/green"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/face28"
+                    android:text="@string/face28" />
+
+                <TextView
+                    android:id="@+id/face29"
+                    android:text="@string/face29" />
+
+                <TextView
+                    android:id="@+id/face30"
+                    android:text="@string/face30" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/face31"
+                    android:text="@string/face31" />
+
+                <TextView
+                    android:id="@+id/face32"
+                    android:text="@string/face32" />
+
+                <TextView
+                    android:id="@+id/face33"
+                    android:text="@string/face33" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/face34"
+                    android:text="@string/face34" />
+
+                <TextView
+                    android:id="@+id/face35"
+                    android:text="@string/face35" />
+
+                <TextView
+                    android:id="@+id/face36"
+                    android:text="@string/face36" />
+
+            </TableRow>
+
+        </TableLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/redFrame"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toLeftOf="@+id/blueFrame"
+        app:layout_constraintTop_toTopOf="@+id/blueFrame">
+
+        <TableLayout
+            android:id="@+id/red"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/face37"
+                    android:text="@string/face37" />
+
+                <TextView
+                    android:id="@+id/face38"
+                    android:text="@string/face38" />
+
+                <TextView
+                    android:id="@+id/face39"
+                    android:text="@string/face39" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/face40"
+                    android:text="@string/face40" />
+
+                <TextView
+                    android:id="@+id/face41"
+                    android:text="@string/face41" />
+
+                <TextView
+                    android:id="@+id/face42"
+                    android:text="@string/face42" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/face43"
+                    android:text="@string/face43" />
+
+                <TextView
+                    android:id="@+id/face44"
+                    android:text="@string/face44" />
+
+                <TextView
+                    android:id="@+id/face45"
+                    android:text="@string/face45" />
+
+            </TableRow>
+
+        </TableLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/yellowFrame"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@+id/blueFrame"
+        app:layout_constraintTop_toBottomOf="@+id/blueFrame">
+
+        <TableLayout
+            android:id="@+id/yellow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/face46"
+                    android:text="@string/face46" />
+
+                <TextView
+                    android:id="@+id/face47"
+                    android:text="@string/face47" />
+
+                <TextView
+                    android:id="@+id/face48"
+                    android:text="@string/face48" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/face49"
+                    android:text="@string/face49" />
+
+                <TextView
+                    android:id="@+id/face50"
+                    android:text="@string/face50" />
+
+                <TextView
+                    android:id="@+id/face51"
+                    android:text="@string/face51" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/face52"
+                    android:text="@string/face52" />
+
+                <TextView
+                    android:id="@+id/face53"
+                    android:text="@string/face53" />
+
+                <TextView
+                    android:id="@+id/face54"
+                    android:text="@string/face54" />
+
+            </TableRow>
+
+        </TableLayout>
+    </FrameLayout>
+
 
 </android.support.constraint.ConstraintLayout>
