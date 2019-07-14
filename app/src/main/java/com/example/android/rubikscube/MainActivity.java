@@ -3,6 +3,7 @@ package com.example.android.rubikscube;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.TextView;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -35,18 +36,30 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void up() {
+        //Sublists are to facilitate rotation
         List tempList1 = whiteList.subList(0, 3);
         List tempList2 = whiteList.subList(3, 6);
         List tempList3 = whiteList.subList(6, 9); //TODO: Garbage Collection mebbe
         List<Integer> arrList = new ArrayList<>();
-
-        for (int i = 0; i<3; i++) {
+        for (int i = 0; i < 3; i++) {
+            //Rotate
             arrList.add((int)tempList3.get(i));
             arrList.add((int)tempList2.get(i));
             arrList.add((int)tempList1.get(i));
-            Log.e("up: ", arrList.toString());
+        }
+        //Overwrites the array
+        whiteArr = arrList.toArray(whiteArr);
+//        Log.e("up: ", Array.get(whiteArr, 0).toString());
+
+        //Displays rotation
+        for (int i = 0; i < 9; i++) {
+            int j = i + 1;
+            String posString = "pos" + j;
+            int id = getResources().getIdentifier(posString, "id", getPackageName());
+            final TextView textView = findViewById(id);
+            textView.setText(Array.get(whiteArr, i).toString());
         }
 
-        whiteArr = arrList.toArray(whiteArr);
+        //TODO: Rotate peripheral, not just the face
     }
 }
