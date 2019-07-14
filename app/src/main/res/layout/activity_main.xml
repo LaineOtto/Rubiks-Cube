@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-
+    
     <TableLayout
         android:id="@+id/white"
         android:layout_width="70dp"
@@ -19,14 +19,17 @@
                 android:layout_height="wrap_content">
 
                 <TextView
+                    android:textAlignment="center"
                     android:id="@+id/face1"
                     android:text="@string/face1" />
 
                 <TextView
+                    android:textAlignment="center"
                     android:id="@+id/face2"
                     android:text="@string/face2" />
 
                 <TextView
+                    android:textAlignment="center"
                     android:id="@+id/face3"
                     android:text="@string/face3" />
 
@@ -37,14 +40,17 @@
                 android:layout_height="wrap_content">
 
                 <TextView
+                    android:textAlignment="center"
                     android:id="@+id/face4"
                     android:text="@string/face4" />
 
                 <TextView
+                    android:textAlignment="center"
                     android:id="@+id/face5"
                     android:text="@string/face5" />
 
                 <TextView
+                    android:textAlignment="center"
                     android:id="@+id/face6"
                     android:text="@string/face6" />
 
@@ -55,14 +61,17 @@
                 android:layout_height="wrap_content">
 
                 <TextView
+                    android:textAlignment="center"
                     android:id="@+id/face7"
                     android:text="@string/face7" />
 
                 <TextView
+                    android:textAlignment="center"
                     android:id="@+id/face8"
                     android:text="@string/face8" />
 
                 <TextView
+                    android:textAlignment="center"
                     android:id="@+id/face9"
                     android:text="@string/face9" />
 
@@ -83,14 +92,17 @@
                 android:layout_height="wrap_content">
 
                 <TextView
+                    android:textAlignment="center"
                     android:id="@+id/face10"
                     android:text="@string/face10" />
 
                 <TextView
+                    android:textAlignment="center"
                     android:id="@+id/face11"
                     android:text="@string/face11" />
 
                 <TextView
+                    android:textAlignment="center"
                     android:id="@+id/face12"
                     android:text="@string/face12" />
 
@@ -101,14 +113,17 @@
                 android:layout_height="wrap_content">
 
                 <TextView
+                    android:textAlignment="center"
                     android:id="@+id/face13"
                     android:text="@string/face13" />
 
                 <TextView
+                    android:textAlignment="center"
                     android:id="@+id/face14"
                     android:text="@string/face14" />
 
                 <TextView
+                    android:textAlignment="center"
                     android:id="@+id/face15"
                     android:text="@string/face16" />
 
@@ -119,14 +134,17 @@
                 android:layout_height="wrap_content">
 
                 <TextView
+                    android:textAlignment="center"
                     android:id="@+id/face16"
                     android:text="@string/face16" />
 
                 <TextView
+                    android:textAlignment="center"
                     android:id="@+id/face17"
                     android:text="@string/face17" />
 
                 <TextView
+                    android:textAlignment="center"
                     android:id="@+id/face18"
                     android:text="@string/face18" />
 
@@ -147,14 +165,17 @@
                 android:layout_height="wrap_content">
 
                 <TextView
+                    android:textAlignment="center"
                     android:id="@+id/face19"
                     android:text="@string/face19" />
 
                 <TextView
+                    android:textAlignment="center"
                     android:id="@+id/face20"
                     android:text="@string/face20" />
 
                 <TextView
+                    android:textAlignment="center"
                     android:id="@+id/face21"
                     android:text="@string/face21" />
 
@@ -165,14 +186,17 @@
                 android:layout_height="wrap_content">
 
                 <TextView
+                    android:textAlignment="center"
                     android:id="@+id/face22"
                     android:text="@string/face22" />
 
                 <TextView
+                    android:textAlignment="center"
                     android:id="@+id/face23"
                     android:text="@string/face23" />
 
                 <TextView
+                    android:textAlignment="center"
                     android:id="@+id/face24"
                     android:text="@string/face24" />
 
@@ -183,14 +207,17 @@
                 android:layout_height="wrap_content">
 
                 <TextView
+                    android:textAlignment="center"
                     android:id="@+id/face25"
                     android:text="@string/face25" />
 
                 <TextView
+                    android:textAlignment="center"
                     android:id="@+id/face26"
                     android:text="@string/face26" />
 
                 <TextView
+                    android:textAlignment="center"
                     android:id="@+id/face27"
                     android:text="@string/face27" />
 
@@ -211,14 +238,17 @@
                 android:layout_height="wrap_content">
 
                 <TextView
+                    android:textAlignment="center"
                     android:id="@+id/face28"
                     android:text="@string/face28" />
 
                 <TextView
+                    android:textAlignment="center"
                     android:id="@+id/face29"
                     android:text="@string/face29" />
 
                 <TextView
+                    android:textAlignment="center"
                     android:id="@+id/face30"
                     android:text="@string/face30" />
 
@@ -229,14 +259,17 @@
                 android:layout_height="wrap_content">
 
                 <TextView
+                    android:textAlignment="center"
                     android:id="@+id/face31"
                     android:text="@string/face31" />
 
                 <TextView
+                    android:textAlignment="center"
                     android:id="@+id/face32"
                     android:text="@string/face32" />
 
                 <TextView
+                    android:textAlignment="center"
                     android:id="@+id/face33"
                     android:text="@string/face33" />
 
@@ -247,14 +280,17 @@
                 android:layout_height="wrap_content">
 
                 <TextView
+                    android:textAlignment="center"
                     android:id="@+id/face34"
                     android:text="@string/face34" />
 
                 <TextView
+                    android:textAlignment="center"
                     android:id="@+id/face35"
                     android:text="@string/face35" />
 
                 <TextView
+                    android:textAlignment="center"
                     android:id="@+id/face36"
                     android:text="@string/face36" />
 
@@ -275,14 +311,17 @@
                 android:layout_height="wrap_content">
 
                 <TextView
+                    android:textAlignment="center"
                     android:id="@+id/face37"
                     android:text="@string/face37" />
 
                 <TextView
+                    android:textAlignment="center"
                     android:id="@+id/face38"
                     android:text="@string/face38" />
 
                 <TextView
+                    android:textAlignment="center"
                     android:id="@+id/face39"
                     android:text="@string/face39" />
 
@@ -293,14 +332,17 @@
                 android:layout_height="wrap_content">
 
                 <TextView
+                    android:textAlignment="center"
                     android:id="@+id/face40"
                     android:text="@string/face40" />
 
                 <TextView
+                    android:textAlignment="center"
                     android:id="@+id/face41"
                     android:text="@string/face41" />
 
                 <TextView
+                    android:textAlignment="center"
                     android:id="@+id/face42"
                     android:text="@string/face42" />
 
@@ -311,14 +353,17 @@
                 android:layout_height="wrap_content">
 
                 <TextView
+                    android:textAlignment="center"
                     android:id="@+id/face43"
                     android:text="@string/face43" />
 
                 <TextView
+                    android:textAlignment="center"
                     android:id="@+id/face44"
                     android:text="@string/face44" />
 
                 <TextView
+                    android:textAlignment="center"
                     android:id="@+id/face45"
                     android:text="@string/face45" />
 
@@ -339,14 +384,17 @@
                 android:layout_height="wrap_content">
 
                 <TextView
+                    android:textAlignment="center"
                     android:id="@+id/face46"
                     android:text="@string/face46" />
 
                 <TextView
+                    android:textAlignment="center"
                     android:id="@+id/face47"
                     android:text="@string/face47" />
 
                 <TextView
+                    android:textAlignment="center"
                     android:id="@+id/face48"
                     android:text="@string/face48" />
 
@@ -357,14 +405,17 @@
                 android:layout_height="wrap_content">
 
                 <TextView
+                    android:textAlignment="center"
                     android:id="@+id/face49"
                     android:text="@string/face49" />
 
                 <TextView
+                    android:textAlignment="center"
                     android:id="@+id/face50"
                     android:text="@string/face50" />
 
                 <TextView
+                    android:textAlignment="center"
                     android:id="@+id/face51"
                     android:text="@string/face51" />
 
@@ -375,14 +426,17 @@
                 android:layout_height="wrap_content">
 
                 <TextView
+                    android:textAlignment="center"
                     android:id="@+id/face52"
                     android:text="@string/face52" />
 
                 <TextView
+                    android:textAlignment="center"
                     android:id="@+id/face53"
                     android:text="@string/face53" />
 
                 <TextView
+                    android:textAlignment="center"
                     android:id="@+id/face54"
                     android:text="@string/face54" />
 
