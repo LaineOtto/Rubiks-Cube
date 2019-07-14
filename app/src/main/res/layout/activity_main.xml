@@ -5,443 +5,450 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-    
+
     <TableLayout
         android:id="@+id/white"
         android:layout_width="70dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:stretchColumns="*"
         app:layout_constraintLeft_toLeftOf="@+id/blue"
         app:layout_constraintTop_toTopOf="parent">
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-                <TextView
-                    android:textAlignment="center"
-                    android:id="@+id/face1"
-                    android:text="@string/face1" />
+            <TextView
+                android:id="@+id/pos1"
+                style="@style/TableText"
+                android:text="@string/pos1" />
 
-                <TextView
-                    android:textAlignment="center"
-                    android:id="@+id/face2"
-                    android:text="@string/face2" />
+            <TextView
+                android:id="@+id/pos2"
+                style="@style/TableText"
+                android:text="@string/pos2" />
 
-                <TextView
-                    android:textAlignment="center"
-                    android:id="@+id/face3"
-                    android:text="@string/face3" />
+            <TextView
+                android:id="@+id/pos3"
+                style="@style/TableText"
+                android:text="@string/pos3" />
 
-            </TableRow>
+        </TableRow>
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-                <TextView
-                    android:textAlignment="center"
-                    android:id="@+id/face4"
-                    android:text="@string/face4" />
+            <TextView
+                android:id="@+id/pos4"
+                style="@style/TableText"
+                android:text="@string/pos4" />
 
-                <TextView
-                    android:textAlignment="center"
-                    android:id="@+id/face5"
-                    android:text="@string/face5" />
+            <TextView
+                android:id="@+id/pos5"
+                style="@style/TableText"
+                android:text="@string/pos5" />
 
-                <TextView
-                    android:textAlignment="center"
-                    android:id="@+id/face6"
-                    android:text="@string/face6" />
+            <TextView
+                android:id="@+id/pos6"
+                style="@style/TableText"
+                android:text="@string/pos6" />
 
-            </TableRow>
+        </TableRow>
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-                <TextView
-                    android:textAlignment="center"
-                    android:id="@+id/face7"
-                    android:text="@string/face7" />
+            <TextView
+                android:id="@+id/pos7"
+                style="@style/TableText"
+                android:text="@string/pos7" />
 
-                <TextView
-                    android:textAlignment="center"
-                    android:id="@+id/face8"
-                    android:text="@string/face8" />
+            <TextView
+                android:id="@+id/pos8"
+                style="@style/TableText"
+                android:text="@string/pos8" />
 
-                <TextView
-                    android:textAlignment="center"
-                    android:id="@+id/face9"
-                    android:text="@string/face9" />
+            <TextView
+                android:id="@+id/pos9"
+                style="@style/TableText"
+                android:text="@string/pos9" />
 
-            </TableRow>
+        </TableRow>
 
-        </TableLayout>
+    </TableLayout>
 
     <TableLayout
         android:id="@+id/blue"
         android:layout_width="70dp"
         android:layout_height="wrap_content"
+        android:layout_margin="5dp"
         android:stretchColumns="*"
-        app:layout_constraintLeft_toLeftOf="@+id/white"
-        app:layout_constraintTop_toBottomOf="@+id/white">
+        app:layout_constraintTop_toBottomOf="@+id/white"
+        app:layout_constraintLeft_toRightOf="@+id/red">
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-                <TextView
-                    android:textAlignment="center"
-                    android:id="@+id/face10"
-                    android:text="@string/face10" />
+            <TextView
+                android:id="@+id/pos10"
+                style="@style/TableText"
+                android:text="@string/pos10" />
 
-                <TextView
-                    android:textAlignment="center"
-                    android:id="@+id/face11"
-                    android:text="@string/face11" />
+            <TextView
+                android:id="@+id/pos11"
+                style="@style/TableText"
+                android:text="@string/pos11" />
 
-                <TextView
-                    android:textAlignment="center"
-                    android:id="@+id/face12"
-                    android:text="@string/face12" />
+            <TextView
+                android:id="@+id/pos12"
+                style="@style/TableText"
+                android:text="@string/pos12" />
 
-            </TableRow>
+        </TableRow>
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-                <TextView
-                    android:textAlignment="center"
-                    android:id="@+id/face13"
-                    android:text="@string/face13" />
+            <TextView
+                android:id="@+id/pos13"
+                style="@style/TableText"
+                android:text="@string/pos13" />
 
-                <TextView
-                    android:textAlignment="center"
-                    android:id="@+id/face14"
-                    android:text="@string/face14" />
+            <TextView
+                android:id="@+id/pos14"
+                style="@style/TableText"
+                android:text="@string/pos14" />
 
-                <TextView
-                    android:textAlignment="center"
-                    android:id="@+id/face15"
-                    android:text="@string/face16" />
+            <TextView
+                android:id="@+id/pos15"
+                style="@style/TableText"
+                android:text="@string/pos16" />
 
-            </TableRow>
+        </TableRow>
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-                <TextView
-                    android:textAlignment="center"
-                    android:id="@+id/face16"
-                    android:text="@string/face16" />
+            <TextView
+                android:id="@+id/pos16"
+                style="@style/TableText"
+                android:text="@string/pos16" />
 
-                <TextView
-                    android:textAlignment="center"
-                    android:id="@+id/face17"
-                    android:text="@string/face17" />
+            <TextView
+                android:id="@+id/pos17"
+                style="@style/TableText"
+                android:text="@string/pos17" />
 
-                <TextView
-                    android:textAlignment="center"
-                    android:id="@+id/face18"
-                    android:text="@string/face18" />
+            <TextView
+                android:id="@+id/pos18"
+                style="@style/TableText"
+                android:text="@string/pos18" />
 
-            </TableRow>
+        </TableRow>
 
-        </TableLayout>
-    
+    </TableLayout>
+
     <TableLayout
         android:id="@+id/orange"
         android:layout_width="70dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
         android:stretchColumns="*"
         app:layout_constraintLeft_toRightOf="@+id/blue"
         app:layout_constraintTop_toTopOf="@+id/blue">
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-                <TextView
-                    android:textAlignment="center"
-                    android:id="@+id/face19"
-                    android:text="@string/face19" />
+            <TextView
+                android:id="@+id/pos19"
+                style="@style/TableText"
+                android:text="@string/pos19" />
 
-                <TextView
-                    android:textAlignment="center"
-                    android:id="@+id/face20"
-                    android:text="@string/face20" />
+            <TextView
+                android:id="@+id/pos20"
+                style="@style/TableText"
+                android:text="@string/pos20" />
 
-                <TextView
-                    android:textAlignment="center"
-                    android:id="@+id/face21"
-                    android:text="@string/face21" />
+            <TextView
+                android:id="@+id/pos21"
+                style="@style/TableText"
+                android:text="@string/pos21" />
 
-            </TableRow>
+        </TableRow>
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-                <TextView
-                    android:textAlignment="center"
-                    android:id="@+id/face22"
-                    android:text="@string/face22" />
+            <TextView
+                android:id="@+id/pos22"
+                style="@style/TableText"
+                android:text="@string/pos22" />
 
-                <TextView
-                    android:textAlignment="center"
-                    android:id="@+id/face23"
-                    android:text="@string/face23" />
+            <TextView
+                android:id="@+id/pos23"
+                style="@style/TableText"
+                android:text="@string/pos23" />
 
-                <TextView
-                    android:textAlignment="center"
-                    android:id="@+id/face24"
-                    android:text="@string/face24" />
+            <TextView
+                android:id="@+id/pos24"
+                style="@style/TableText"
+                android:text="@string/pos24" />
 
-            </TableRow>
+        </TableRow>
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-                <TextView
-                    android:textAlignment="center"
-                    android:id="@+id/face25"
-                    android:text="@string/face25" />
+            <TextView
+                android:id="@+id/pos25"
+                style="@style/TableText"
+                android:text="@string/pos25" />
 
-                <TextView
-                    android:textAlignment="center"
-                    android:id="@+id/face26"
-                    android:text="@string/face26" />
+            <TextView
+                android:id="@+id/pos26"
+                style="@style/TableText"
+                android:text="@string/pos26" />
 
-                <TextView
-                    android:textAlignment="center"
-                    android:id="@+id/face27"
-                    android:text="@string/face27" />
+            <TextView
+                android:id="@+id/pos27"
+                style="@style/TableText"
+                android:text="@string/pos27" />
 
-            </TableRow>
+        </TableRow>
 
-        </TableLayout>
+    </TableLayout>
 
     <TableLayout
         android:id="@+id/green"
         android:layout_width="70dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
         android:stretchColumns="*"
         app:layout_constraintLeft_toRightOf="@+id/orange"
         app:layout_constraintTop_toTopOf="@+id/blue">
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-                <TextView
-                    android:textAlignment="center"
-                    android:id="@+id/face28"
-                    android:text="@string/face28" />
+            <TextView
+                android:id="@+id/pos28"
+                style="@style/TableText"
+                android:text="@string/pos28" />
 
-                <TextView
-                    android:textAlignment="center"
-                    android:id="@+id/face29"
-                    android:text="@string/face29" />
+            <TextView
+                android:id="@+id/pos29"
+                style="@style/TableText"
+                android:text="@string/pos29" />
 
-                <TextView
-                    android:textAlignment="center"
-                    android:id="@+id/face30"
-                    android:text="@string/face30" />
+            <TextView
+                android:id="@+id/pos30"
+                style="@style/TableText"
+                android:text="@string/pos30" />
 
-            </TableRow>
+        </TableRow>
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-                <TextView
-                    android:textAlignment="center"
-                    android:id="@+id/face31"
-                    android:text="@string/face31" />
+            <TextView
+                android:id="@+id/pos31"
+                style="@style/TableText"
+                android:text="@string/pos31" />
 
-                <TextView
-                    android:textAlignment="center"
-                    android:id="@+id/face32"
-                    android:text="@string/face32" />
+            <TextView
+                android:id="@+id/pos32"
+                style="@style/TableText"
+                android:text="@string/pos32" />
 
-                <TextView
-                    android:textAlignment="center"
-                    android:id="@+id/face33"
-                    android:text="@string/face33" />
+            <TextView
+                android:id="@+id/pos33"
+                style="@style/TableText"
+                android:text="@string/pos33" />
 
-            </TableRow>
+        </TableRow>
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-                <TextView
-                    android:textAlignment="center"
-                    android:id="@+id/face34"
-                    android:text="@string/face34" />
+            <TextView
+                android:id="@+id/pos34"
+                style="@style/TableText"
+                android:text="@string/pos34" />
 
-                <TextView
-                    android:textAlignment="center"
-                    android:id="@+id/face35"
-                    android:text="@string/face35" />
+            <TextView
+                android:id="@+id/pos35"
+                style="@style/TableText"
+                android:text="@string/pos35" />
 
-                <TextView
-                    android:textAlignment="center"
-                    android:id="@+id/face36"
-                    android:text="@string/face36" />
+            <TextView
+                android:id="@+id/pos36"
+                style="@style/TableText"
+                android:text="@string/pos36" />
 
-            </TableRow>
+        </TableRow>
 
-        </TableLayout>
+    </TableLayout>
 
     <TableLayout
         android:id="@+id/red"
         android:layout_width="70dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
         android:stretchColumns="*"
         app:layout_constraintRight_toLeftOf="@+id/blue"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/blue">
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-                <TextView
-                    android:textAlignment="center"
-                    android:id="@+id/face37"
-                    android:text="@string/face37" />
+            <TextView
+                android:id="@+id/pos37"
+                style="@style/TableText"
+                android:text="@string/pos37" />
 
-                <TextView
-                    android:textAlignment="center"
-                    android:id="@+id/face38"
-                    android:text="@string/face38" />
+            <TextView
+                android:id="@+id/pos38"
+                style="@style/TableText"
+                android:text="@string/pos38" />
 
-                <TextView
-                    android:textAlignment="center"
-                    android:id="@+id/face39"
-                    android:text="@string/face39" />
+            <TextView
+                android:id="@+id/pos39"
+                style="@style/TableText"
+                android:text="@string/pos39" />
 
-            </TableRow>
+        </TableRow>
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-                <TextView
-                    android:textAlignment="center"
-                    android:id="@+id/face40"
-                    android:text="@string/face40" />
+            <TextView
+                android:id="@+id/pos40"
+                style="@style/TableText"
+                android:text="@string/pos40" />
 
-                <TextView
-                    android:textAlignment="center"
-                    android:id="@+id/face41"
-                    android:text="@string/face41" />
+            <TextView
+                android:id="@+id/pos41"
+                style="@style/TableText"
+                android:text="@string/pos41" />
 
-                <TextView
-                    android:textAlignment="center"
-                    android:id="@+id/face42"
-                    android:text="@string/face42" />
+            <TextView
+                android:id="@+id/pos42"
+                style="@style/TableText"
+                android:text="@string/pos42" />
 
-            </TableRow>
+        </TableRow>
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-                <TextView
-                    android:textAlignment="center"
-                    android:id="@+id/face43"
-                    android:text="@string/face43" />
+            <TextView
+                android:id="@+id/pos43"
+                style="@style/TableText"
+                android:text="@string/pos43" />
 
-                <TextView
-                    android:textAlignment="center"
-                    android:id="@+id/face44"
-                    android:text="@string/face44" />
+            <TextView
+                android:id="@+id/pos44"
+                style="@style/TableText"
+                android:text="@string/pos44" />
 
-                <TextView
-                    android:textAlignment="center"
-                    android:id="@+id/face45"
-                    android:text="@string/face45" />
+            <TextView
+                android:id="@+id/pos45"
+                style="@style/TableText"
+                android:text="@string/pos45" />
 
-            </TableRow>
+        </TableRow>
 
-        </TableLayout>
+    </TableLayout>
 
     <TableLayout
         android:id="@+id/yellow"
         android:layout_width="70dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:stretchColumns="*"
         app:layout_constraintLeft_toLeftOf="@+id/blue"
         app:layout_constraintTop_toBottomOf="@+id/blue">
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-                <TextView
-                    android:textAlignment="center"
-                    android:id="@+id/face46"
-                    android:text="@string/face46" />
+            <TextView
+                android:id="@+id/pos46"
+                style="@style/TableText"
+                android:text="@string/pos46" />
 
-                <TextView
-                    android:textAlignment="center"
-                    android:id="@+id/face47"
-                    android:text="@string/face47" />
+            <TextView
+                android:id="@+id/pos47"
+                style="@style/TableText"
+                android:text="@string/pos47" />
 
-                <TextView
-                    android:textAlignment="center"
-                    android:id="@+id/face48"
-                    android:text="@string/face48" />
+            <TextView
+                android:id="@+id/pos48"
+                style="@style/TableText"
+                android:text="@string/pos48" />
 
-            </TableRow>
+        </TableRow>
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-                <TextView
-                    android:textAlignment="center"
-                    android:id="@+id/face49"
-                    android:text="@string/face49" />
+            <TextView
+                android:id="@+id/pos49"
+                style="@style/TableText"
+                android:text="@string/pos49" />
 
-                <TextView
-                    android:textAlignment="center"
-                    android:id="@+id/face50"
-                    android:text="@string/face50" />
+            <TextView
+                android:id="@+id/pos50"
+                style="@style/TableText"
+                android:text="@string/pos50" />
 
-                <TextView
-                    android:textAlignment="center"
-                    android:id="@+id/face51"
-                    android:text="@string/face51" />
+            <TextView
+                android:id="@+id/pos51"
+                style="@style/TableText"
+                android:text="@string/pos51" />
 
-            </TableRow>
+        </TableRow>
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-                <TextView
-                    android:textAlignment="center"
-                    android:id="@+id/face52"
-                    android:text="@string/face52" />
+            <TextView
+                android:id="@+id/pos52"
+                style="@style/TableText"
+                android:text="@string/pos52" />
 
-                <TextView
-                    android:textAlignment="center"
-                    android:id="@+id/face53"
-                    android:text="@string/face53" />
+            <TextView
+                android:id="@+id/pos53"
+                style="@style/TableText"
+                android:text="@string/pos53" />
 
-                <TextView
-                    android:textAlignment="center"
-                    android:id="@+id/face54"
-                    android:text="@string/face54" />
+            <TextView
+                android:id="@+id/pos54"
+                style="@style/TableText"
+                android:text="@string/pos54" />
 
-            </TableRow>
+        </TableRow>
 
-        </TableLayout>
+    </TableLayout>
 
 </android.support.constraint.ConstraintLayout>
