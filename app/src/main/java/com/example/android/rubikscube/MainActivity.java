@@ -3,6 +3,7 @@ package com.example.android.rubikscube;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.TextView;
 
 import java.lang.reflect.Array;
@@ -20,22 +21,26 @@ public class MainActivity extends AppCompatActivity {
     Integer[] redArr = {37, 38, 39, 40, 41, 42, 43, 44, 45};
     Integer[] yellowArr = {46, 47, 48, 49, 50, 51, 52, 53, 54}; //TODO: Garbage Collection on these barely used arrays
 
-    //Turn the arrays into lists, which are actually useful
-    List<Integer> whiteList = new ArrayList<>(Arrays.asList(whiteArr));
-    List<Integer> blueList = new ArrayList<>(Arrays.asList(blueArr));
-    List<Integer> orangeList = new ArrayList<>(Arrays.asList(orangeArr));
-    List<Integer> greenList = new ArrayList<>(Arrays.asList(greenArr));
-    List<Integer> redList = new ArrayList<>(Arrays.asList(redArr));
-    List<Integer> yellowList = new ArrayList<>(Arrays.asList(yellowArr));
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        up(); //TODO: Make a button for this or something
+    }
+
+    public void upClick(View view) {
+        Log.e("upClick", " called");
+        up();
     }
 
     public void up() {
+        //Turn the arrays into lists, which are actually useful
+        List<Integer> whiteList = new ArrayList<>(Arrays.asList(whiteArr));
+        List<Integer> blueList = new ArrayList<>(Arrays.asList(blueArr));
+        List<Integer> orangeList = new ArrayList<>(Arrays.asList(orangeArr));
+        List<Integer> greenList = new ArrayList<>(Arrays.asList(greenArr));
+        List<Integer> redList = new ArrayList<>(Arrays.asList(redArr));
+        List<Integer> yellowList = new ArrayList<>(Arrays.asList(yellowArr));
+
         //Sublists are to facilitate rotation
         List tempList1 = whiteList.subList(0, 3);
         List tempList2 = whiteList.subList(3, 6);
@@ -49,7 +54,8 @@ public class MainActivity extends AppCompatActivity {
         }
         //Overwrites the array
         whiteArr = arrList.toArray(whiteArr);
-//        Log.e("up: ", Array.get(whiteArr, 0).toString());
+
+        //TODO: Rotation animation
 
         //Displays rotation
         for (int i = 0; i < 9; i++) {

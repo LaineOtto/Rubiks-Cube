@@ -86,8 +86,8 @@
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
         android:stretchColumns="*"
-        app:layout_constraintTop_toBottomOf="@+id/white"
-        app:layout_constraintLeft_toRightOf="@+id/red">
+        app:layout_constraintLeft_toRightOf="@+id/red"
+        app:layout_constraintTop_toBottomOf="@+id/white">
 
         <TableRow
             android:layout_width="match_parent"
@@ -450,5 +450,15 @@
         </TableRow>
 
     </TableLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="10dp"
+        android:onClick="upClick"
+        android:text="@string/upButtonText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yellow" />
 
 </android.support.constraint.ConstraintLayout>
