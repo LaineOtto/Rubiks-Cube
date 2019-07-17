@@ -27,33 +27,53 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void upClick(View view) {
+    public void up(View view) {
         Log.e("upClick", " called");
-        up();
+        rotate("White");
     }
 
-    public void up() {
-        //Turn the arrays into lists, which are actually useful
-        List<Integer> whiteList = new ArrayList<>(Arrays.asList(whiteArr));
-        List<Integer> blueList = new ArrayList<>(Arrays.asList(blueArr));
-        List<Integer> orangeList = new ArrayList<>(Arrays.asList(orangeArr));
-        List<Integer> greenList = new ArrayList<>(Arrays.asList(greenArr));
-        List<Integer> redList = new ArrayList<>(Arrays.asList(redArr));
-        List<Integer> yellowList = new ArrayList<>(Arrays.asList(yellowArr));
-
-        //Sublists are to facilitate rotation
-        List tempList1 = whiteList.subList(0, 3);
-        List tempList2 = whiteList.subList(3, 6);
-        List tempList3 = whiteList.subList(6, 9); //TODO: Garbage Collection mebbe
-        List<Integer> arrList = new ArrayList<>();
-        for (int i = 0; i < 3; i++) {
-            //Rotate
-            arrList.add((int)tempList3.get(i));
-            arrList.add((int)tempList2.get(i));
-            arrList.add((int)tempList1.get(i));
+    public void rotate(String face) {
+        int faceInt; //TODO Error handling for this
+        List<Integer> rotateList;
+        switch (face) {
+            case "White":
+            case "white":
+                faceInt = 0;
+                rotateList = new ArrayList<>(Arrays.asList(whiteArr));
+                break;
+            case "Blue":
+            case "blue":
+                faceInt = 1;
+                rotateList = new ArrayList<>(Arrays.asList(blueArr));
+                break;
+            case "Orange":
+            case "orange":
+                faceInt = 2;
+                rotateList = new ArrayList<>(Arrays.asList(orangeArr));
+                break;
+            case "Green":
+            case "green":
+                faceInt = 3;
+                rotateList = new ArrayList<>(Arrays.asList(greenArr));
+                break;
+            case "Red":
+            case "red":
+                faceInt = 4;
+                rotateList = new ArrayList<>(Arrays.asList(redArr));
+                break;
+            case "Yellow":
+            case "yellow":
+                faceInt = 5;
+                rotateList = new ArrayList<>(Arrays.asList(yellowArr));
+                break;
+            default:
+                faceInt = -1;
+                rotateList = new ArrayList<>(); //TODO: Handle these somehow
+                break;
         }
-        //Overwrites the array
-        whiteArr = arrList.toArray(whiteArr);
+
+
+        whiteArr = faceRotateCw(faceInt, rotateList).toArray(whiteArr);
 
         //TODO: Rotation animation
 
@@ -67,5 +87,20 @@ public class MainActivity extends AppCompatActivity {
         }
 
         //TODO: Rotate peripheral, not just the face
+    }
+
+    private List<Integer> faceRotateCw(int faceInt, List<Integer> rotateList) {
+        //Sublists are to facilitate rotation
+        List tempList1 = rotateList.subList(0, 3);
+        List tempList2 = rotateList.subList(3, 6);
+        List tempList3 = rotateList.subList(6, 9); //TODO: Garbage Collection mebbe
+        List<Integer> arrList = new ArrayList<>();
+        for (int i = 0; i < 3; i++) {
+            //Rotate
+            arrList.add((int) tempList3.get(i));
+            arrList.add((int) tempList2.get(i));
+            arrList.add((int) tempList1.get(i));
+        }
+        return arrList;
     }
 }
